@@ -53,9 +53,9 @@ RUN apt update \
 && apt clean -qq
 
 # Copy over script to Docker container
-COPY ../run_my_system.bash /
+COPY ./run_my_system.bash /
 
 # Use your ros_entrypoint
-COPY ../ros_entrypoint.sh /
+COPY ./ros_entrypoint.sh /
 
-COPY ../wamv_demo.py /
+COPY ./wamv_demo.py /
